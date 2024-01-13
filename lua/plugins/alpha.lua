@@ -1,5 +1,5 @@
 return {
-  "goolard/alpha-nvim",
+  "goolord/alpha-nvim",
   opts = function(_, opts)
     -- https://patorjk.com/software/taag/#p=display&v=0&f=ANSI%20Shadow&t=sergio%0Ajovani
     local logo = [[
