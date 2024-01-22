@@ -10,6 +10,13 @@ return {
       ["<CR>"] = cmp.mapping.confirm({ select = false }),
       ["<Down>"] = cmp.config.disable,
       ["<Up>"] = cmp.config.disable,
+      ["<Tab>"] = cmp.mapping(function(fallback)
+        if cmp.visible() then
+          cmp.select_next_item()
+        else
+          fallback()
+        end
+      end, { "i", "s" }),
     })
   end,
 }
